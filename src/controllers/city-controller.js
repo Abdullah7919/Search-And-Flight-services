@@ -1,4 +1,4 @@
-const { CityService }=require('../services/index');
+const { CityService } =require('../services/index');
 
 const cityService=new CityService();
 
@@ -12,7 +12,7 @@ const create=async(req,res)=>{
             err:{}
         });
     } catch (error) {
-        console.log(err);
+        console.log(error);
         return res.status(500).json({
             data:{},
             success:false,
@@ -34,7 +34,7 @@ const destroy=async(req,res)=>{
         });
         
     } catch (error) {
-        console.log(err);
+        console.log(error);
         return res.status(500).json({
             data:{},
             success:false,
@@ -56,7 +56,7 @@ const update=async(req,res)=>{
         });
         
     } catch (error) {
-        console.log(err);
+        console.log(error);
         return res.status(500).json({
             data:{},
             success:false,
@@ -79,7 +79,7 @@ const get=async(req,res)=>{
         });
         
     } catch (error) {
-        console.log(err);
+        console.log(error);
         return res.status(500).json({
             data:{},
             success:false,
