@@ -59,7 +59,7 @@ class CityService {
 
     async getAllCities(filter){
         try {
-            // console.log(filter,"in city");
+            
             const city=await this.cityRepository.getAllCities({name:filter.name});
             return city;
         } catch (error) {
