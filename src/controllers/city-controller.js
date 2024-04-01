@@ -93,7 +93,8 @@ const get=async(req,res)=>{
 
 const getAll=async(req,res)=>{
     try {
-        const city=await cityService.getAllCities();
+        console.log(req.query,"in controller")
+        const city=await cityService.getAllCities(req.query);
         return res.status(200).json({
             data:city,
             success:true,
