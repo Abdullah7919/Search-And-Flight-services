@@ -13,32 +13,32 @@ module.exports = {
      * }], {});
     */
 
-    await  queryInterface.bulkInsert('Airports',[
-      {
-        name:'Kempegowda International Airport',
-        cityId:16,
-        createdAt:new Date(),
-        updatedAt:new Date()
-      },
-      {
-        name:'Mysuru Airport',
-        cityId:16,
-        createdAt:new Date(),
-        updatedAt:new Date()
-      },
-      {
-        name:'Mengaluru International Airport',
-        cityId:16,
-        createdAt:new Date(),
-        updatedAt:new Date()
-      },
-      {
-        name:'Indra Gandhi International Airport',
-        cityId:5,
-        createdAt:new Date(),
-        updatedAt:new Date()
-      }
-    ])
+    // await  queryInterface.bulkInsert('Airports',[
+    //   {
+    //     name:'Kempegowda International Airport',
+    //     cityId:16,
+    //     createdAt:new Date(),
+    //     updatedAt:new Date()
+    //   },
+    //   {
+    //     name:'Mysuru Airport',
+    //     cityId:16,
+    //     createdAt:new Date(),
+    //     updatedAt:new Date()
+    //   },
+    //   {
+    //     name:'Mengaluru International Airport',
+    //     cityId:16,
+    //     createdAt:new Date(),
+    //     updatedAt:new Date()
+    //   },
+    //   {
+    //     name:'Indra Gandhi International Airport',
+    //     cityId:5,
+    //     createdAt:new Date(),
+    //     updatedAt:new Date()
+    //   }
+    // ])
   },
 
   async down (queryInterface, Sequelize) {
